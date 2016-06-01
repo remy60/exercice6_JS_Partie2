@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+      <img src="images/image1.jpg" id="image1" onmouseover="imgchange('image1')" onmouseout="imgdebut('image1')" />
+      <img src="images/image2.jpg" id="image2" onmouseover="imgchange('image2')" onmouseout="imgdebut('image2')"/>
+      <img src="images/image3.jpg" id="image3" onmouseover="imgchange('image3')" onmouseout="imgdebut('image3')"/>
+      <img src="images/image4.jpg" id="image4" onmouseover="imgchange('image4')" onmouseout="imgdebut('image4')"/>
+      <img src="images/image5.jpg" id="image5" onmouseover="imgchange('image5')" onmouseout="imgdebut('image5')"/>
+<script>
+          function imgchange(x){
+            document.getElementById(x).src="images/" + x + "_2.jpg"
+          }
+          function imgdebut(y){
+            document.getElementById(y).src="images/" + y + ".jpg"
+          }
+</script>
+  </body>
+  </html>
